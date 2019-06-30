@@ -1,0 +1,50 @@
+<view class='content'>
+  <view class='top' wx:if="{{items[0].ownerID.value==null}}">
+    <image src='http://img.nynet.com.cn/underwear/fashion/Atlas/photo/20140316814130.jpg'></image>
+  </view>
+  <view class='top' wx:else>
+    <image src='https://wxwaimai.oss-cn-huhehaote.aliyuncs.com/kyq/{{items[0].ownerID.value}}/{{items[0].storeFileName.value}}'></image>
+  </view>
+  <view class='middle'>
+    <view class='top'>
+      <view class='left'>
+        <view class='fName'>
+          <text>{{items[0].fName.value}}</text>
+        </view>
+        <view class='fPrice'>
+          <text>￥{{items[0].fPrice.value}}</text>
+        </view>
+      </view>
+      <view class='right'>
+        <text>库存{{items[0].fSumNum.value}}</text>
+      </view>
+    </view>
+    <view class='bottom'>
+      <text>品牌：{{items[0].fDescription.value}} </text>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view class='kefu'>
+      <view class='img'>
+        <image src='/images/icons/kf01.png'></image>
+      </view>
+      <view class='kf'>
+        <text>客服</text>
+      </view>
+    </view>
+    <view class='shoucang'>
+      <view class='img'>
+        <image src='/images/icons/sc01.png'></image>
+      </view>
+      <view class='kf'>
+        <text>收藏</text>
+      </view>
+    </view>
+    <view class='cart'>
+      <text>加入购物车</text>
+    </view>
+    <view class='sell'>
+      <text>立即支付</text>
+    </view>
+  </view>
+</view>

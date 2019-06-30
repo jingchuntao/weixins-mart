@@ -1,0 +1,22 @@
+<view class='content'>
+
+  <view class='bottom'>
+
+    <view class='right'>
+      <scroll-view class='sp' scroll-y>
+        <view class='tian-row'>
+          <block wx:for="{{typeTrees}}" wx:key="{{item.fID.value}}">
+            <view class='tian-item' bindtap='goDetail' data-index='{{index}}'>
+              <view class='img'>
+                <image src='https://wxwaimai.oss-cn-huhehaote.aliyuncs.com/kyq/{{item.ownerID.value}}/{{item.storeFileName.value}}'></image>
+              </view>
+              <view class='fName'>
+                <text>{{item.fName.value}}</text>
+              </view>
+            </view>
+          </block>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

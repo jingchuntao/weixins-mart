@@ -1,0 +1,106 @@
+.content {
+  width: 750rpx;
+  height: 100vh;
+}
+
+.top {
+  width: 750rpx;
+  height: 10%;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 4rpx solid rgb(236, 236, 236);
+}
+
+.search {
+  width: 700rpx;
+  height: 70%;
+  background-color: white;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20rpx;
+}
+
+.bottom {
+  width: 750rpx;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 250rpx;
+  height: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+.sp {
+  width: 100%;
+  height: 100%;
+}
+
+.type {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.selectColor {
+  background-color: white;
+}
+
+.right {
+  width:750rpx;
+  height: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+.tian-row {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 20rpx;
+}
+
+.tian-item {
+  width: 350rpx;
+  height: 350rpx;
+  margin-left: 15rpx;
+  margin-bottom: 20rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tian-item .img {
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.img image {
+  width: 100%;
+  height: 100%;
+}
+
+.tian-item .fName {
+  width: 200rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  color: #666;
+}

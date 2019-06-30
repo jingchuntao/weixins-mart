@@ -1,0 +1,34 @@
+<view class='content'>
+  <view class='top'>
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='sp' circular='true'>
+      <block wx:for="{{imgUrls}}" wx:key='{{item}}'>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+  </view>
+  <view class='bottom'>
+    <view wx:for="{{items}}" wx:key="{{item.fID.value}}">
+      <view class='item' bindtap='goDetail' data-index='{{index}}'>
+        <view class='left'>
+          <image src='https://wxwaimai.oss-cn-huhehaote.aliyuncs.com/kyq/{{item.ownerID.value}}/{{item.storeFileName.value}}'></image>
+        </view>
+        <view class='middle'>
+          <view class='mid-top'>
+            <text>{{item.fName.value}}</text>
+          </view>
+          <view class='mid-bottom'>
+            <text>￥{{item.fPrice.value}}元</text>
+          </view>
+        </view>
+        <view class='right'>
+          <text>来一份</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>
